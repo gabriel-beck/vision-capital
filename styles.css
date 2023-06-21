@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url(styles/header.css);
+@import url(styles/main.css);
+@import url(styles/footer.css);
+
+:root {
+    --background-1: #FBFAFF;
+    --background-2: #E5E5E5;
+    --main-purple-1: #23155B;
+    --main-purple-2: #8053FF;
+    --text-color: #928CAB;
+    --footer-text: #D4CDEF;
+    --main-white: #FFFFFF;
+    --button-hover: #946EFF;
+
+    --font-main: 'Poppins', sans-serif;
+
+    --fsize-title-m: 2.5rem;
+    --lhsize-title-m: 2.8rem;
+    --fsize-title-d: 3.25rem;
+    --lhsize-title-d: 3.7rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-white);
+    color: var(--text-color);
+    font-family: var(--font-main);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -----Buttons-----*/
+
+.content__main__buttons__1, 
+.content__product__buttons__1, 
+.content__footer__form__button {
+    background-color: var(--main-purple-2);
+    padding: 0.75rem 0;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--main-white);
+}
+
+.content__main__buttons__2,
+.content__product__buttons__2 {
+    background-color: var(--main-white);
+    padding: 0.75rem 0;
+    width: 80%;
+    border: 1px solid;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--main-purple-2);
+}
+
+.content__footer__form__button {
+    margin-top: 2.5rem;
+    width: 12.5rem;
+}
+
+.content__product__buttons__1,
+.content__product__buttons__2,
+.content__footer__form__button {
+  align-self: center;
+}
+
+/* -----Hover-----*/
+.content__main__buttons__1:hover,
+.content__product__buttons__1:hover,
+.content__footer__form__button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+.content__main__buttons__2:hover,
+.content__product__buttons__2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--button-hover);
+    color: var(--main-white);
+    cursor: pointer;
+}
+
+/* -----Responsive-----*/
+
+@media (min-width: 768px) {
+    .content__main__buttons__1, 
+    .content__product__buttons__1, 
+    .content__footer__form__button {
+    width: 232px;
+    }
+
+    .content__main__buttons__2,
+    .content__product__buttons__2 {
+    width: 232px;
+    }
+
+    .content__product__buttons__1,
+    .content__product__buttons__2,
+    .content__footer__form__button {
+      align-self: flex-start;
+    }
+
+}
